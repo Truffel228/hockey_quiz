@@ -36,9 +36,9 @@ class _BoardingScreenState extends State<BoardingScreen> {
               );
             },
             asset: 'images/on_boarding_first.png',
-            title: 'Challenge Your Hockey IQ',
+            title: 'Desafie seu QI de hóquei',
             text:
-                'Get ready to dive into the thrilling world of hockey trivia. Whether you\'re a die-hard fan or just getting started, our app is designed to challenge and entertain you with a variety of categories and questions.',
+                'Prepare-se para mergulhar no emocionante mundo das curiosidades do hóquei. Quer você seja um fã obstinado ou esteja apenas começando, nosso aplicativo foi projetado para desafiar e entreter você com uma variedade de categorias e perguntas.',
           ),
           BoardingChild(
             onTap: () async {
@@ -53,9 +53,9 @@ class _BoardingScreenState extends State<BoardingScreen> {
               );
             },
             asset: 'images/on_boarding_second.png',
-            title: 'Choose a Category',
+            title: 'Escolha uma categoria',
             text:
-                'Explore topics like Hockey History, Player Records, Teams & Trophies, and National Teams. Test your knowledge with 10 questions in each category.',
+                'Explore tópicos como história do hóquei, recordes de jogadores, equipes e troféus e seleções nacionais. Teste seus conhecimentos com 10 questões em cada categoria.',
           ),
         ],
       ),
@@ -106,7 +106,7 @@ class BoardingChild extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   CustomButton(
-                    title: 'CONTINUE',
+                    title: 'CONTINUAR',
                     onTap: onTap,
                     width: MediaQuery.of(context).size.width * 0.7,
                   ),
@@ -129,7 +129,7 @@ class Terms extends StatelessWidget {
     return RichText(
       textAlign: TextAlign.center,
       text: TextSpan(
-        text: 'By clicking to the “Continue” button, you agree to our ',
+        text: 'Ao clicar no botão “Continuar”, você concorda com nossos ',
         style: const TextStyle(
           color: AppTheme.grey,
           fontSize: 9,
@@ -137,14 +137,14 @@ class Terms extends StatelessWidget {
         ),
         children: [
           TextSpan(
-            text: 'Terms of use ',
+            text: 'Termos de uso ',
             style: TextStyle(color: context.theme.primaryColor),
           ),
           const TextSpan(
-            text: 'and ',
+            text: 'e ',
           ),
           TextSpan(
-            text: 'Privacy Policy Restore',
+            text: 'Restauração da Política de Privacidade',
             style: TextStyle(color: context.theme.primaryColor),
           ),
         ],

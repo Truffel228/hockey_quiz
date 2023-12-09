@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:hockey_quiz/base/app_theme.dart';
 import 'package:hockey_quiz/models/hockey_quizes.dart';
+import 'package:hockey_quiz/screens/matches/matches_screen.dart';
 import 'package:hockey_quiz/screens/news/news_screen.dart';
 import 'package:hockey_quiz/screens/vicorine/victorine_screen.dart';
 import 'package:hockey_quiz/screens/params/params_screen.dart';
@@ -23,7 +24,7 @@ class MainScreen extends StatelessWidget {
                 children: [
                   const Expanded(
                     child: Text(
-                      'Hockey quiz',
+                      'Teste de hóquei',
                       style: TextStyle(
                         fontWeight: FontWeight.w700,
                         fontSize: 16,
@@ -69,7 +70,7 @@ class MainScreen extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              '${quiz.questions.length} questions',
+                              '${quiz.questions.length} questões',
                               style: TextStyle(
                                 fontSize: 10,
                                 fontWeight: FontWeight.w700,
@@ -110,6 +111,29 @@ class MainScreen extends StatelessWidget {
                     image: DecorationImage(
                       fit: BoxFit.cover,
                       image: AssetImage('images/hockey_news.png'),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            SliverToBoxAdapter(
+              child: GestureDetector(
+                onTap: () => Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => MatchesScreen(),
+                  ),
+                ),
+                child: Container(
+                  margin: const EdgeInsets.all(12),
+                  height: 120,
+                  color: context.theme.primaryColor,
+                  alignment: Alignment.center,
+                  child: const Text(
+                    'Partidas de Hóquei',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 24,
+                      fontWeight: FontWeight.w800,
                     ),
                   ),
                 ),

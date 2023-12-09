@@ -28,6 +28,7 @@ dependencies:
   flutter_local_notifications: ^9.8.0+1
   overlay_support: ^2.1.0
   flutter_inappwebview: ^5.7.2+3
+  http:
 
 dev_dependencies:
   flutter_test:

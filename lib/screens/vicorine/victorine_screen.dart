@@ -150,7 +150,7 @@ class _VictorineScreenState extends State<VictorineScreen> {
                   children: [
                     const SizedBox(height: 24),
                     Text(
-                      'Question ${_questionIndex + 1} of ${widget.quiz.questions.length}',
+                      'Pergunta ${_questionIndex + 1} de ${widget.quiz.questions.length}',
                       style: TextStyle(
                         color: context.theme.primaryColor,
                         fontWeight: FontWeight.w700,
@@ -183,7 +183,7 @@ class _VictorineScreenState extends State<VictorineScreen> {
                     const SizedBox(height: 16),
                     CustomButton(
                       width: double.infinity,
-                      title: 'CONTINUE',
+                      title: 'CONTINUAR',
                       onTap: _onContinueTap,
                     ),
                   ],
